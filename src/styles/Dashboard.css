@@ -1,0 +1,44 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: #f8fafc;
+  margin-left: 220px;
+}
+
+.dashboard-top,
+.dashboard-middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dashboard-top > *,
+.dashboard-middle > * {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  flex: 1 1 48%;
+  min-width: 280px;
+}
+
+.dashboard-bottom {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .dashboard-top > *,
+  .dashboard-middle > * {
+    flex: 1 1 100%;
+  }
+}
